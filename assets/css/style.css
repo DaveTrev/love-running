@@ -26,7 +26,7 @@ h1, h2 {
     font-size: 280%;
     margin-left: 30px;
 }
-
+/* navigation links */
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
@@ -48,14 +48,14 @@ h1, h2 {
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: 1px solid #3a3a3a;
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text*/
 
 #hero-outer {
     height: 600px;
@@ -184,7 +184,7 @@ hr {
     border-radius: 50%;
 }
 
-/* event */
+/* event times */
 #times {
     background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
@@ -198,7 +198,7 @@ hr {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
     width: 20%;
-    height: 300%;
+    height: 300px;
     float: left;
     padding: 30px 0 0 10px;
     text-align: center;
@@ -227,12 +227,12 @@ footer { height: 150px;
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #3a3a3a
+    color: #3a3a3a;
 }
 
 /*gallery*/
 #photos {
-    clear:both;
+    clear: both;
     line-height: 0;
     column-count: 4;
     column-gap: 0;
@@ -244,10 +244,10 @@ footer { height: 150px;
 
 /* Media queries */
 
-/* for larger to medium screens size from 1200px wide and down */
+/* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
     #club-ethos {
-        width:65%;
+        width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
@@ -257,7 +257,7 @@ footer { height: 150px;
         margin: 0;
     }
 
-    #left-about, right-about {
+    #left-about, #right-about {
         width: 100%;
         float: left;
         padding: 0;
@@ -275,7 +275,7 @@ footer { height: 150px;
     }
 }
 
-/* For medium screen sizes for 950px wide and down */
+/* For medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
 
     #menu {
@@ -285,4 +285,29 @@ footer { height: 150px;
         margin-bottom: 20px;
         line-height: 25px;
     }
+
+
+#cover-text {
+    left: 0;
+}
+
+#club-ethos {
+    width: 90%;
+    height: 1200px;
+    margin: 0 auto;
+}
+
+.left-about-heading, .right-about-heading {
+    width: inherit;
+}
+
+.left-about-heading h2, .right-about-heading h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.left-about-heading p, .right-about-heading p {
+    text-align: center;
+    padding: 0 20px;
+}
 }
